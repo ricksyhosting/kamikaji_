@@ -147,6 +147,9 @@
                 align-items: center;
                 justify-content: center;
             }
+            .btn-secondary{
+                margin-left:13px;
+            }
             
             .mobile-nav ul li a {
                 min-height: 44px;
