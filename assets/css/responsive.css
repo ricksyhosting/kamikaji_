@@ -1,0 +1,187 @@
+
+        /* Media Queries for Enhanced Responsiveness */
+        @media (min-width: 480px) {
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .trust-icons {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .contact-info {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .newsletter-form {
+                flex-direction: row;
+            }
+            
+            .newsletter-input {
+                flex: 1;
+            }
+            
+            .newsletter-submit {
+                margin-top: 0;
+                white-space: nowrap;
+            }
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding-top: 90px;
+            }
+            
+            .header {
+                padding: 15px 0;
+            }
+            
+            .nav-container {
+                padding: 0 20px;
+            }
+            
+            .hero {
+                padding: 80px 0;
+            }
+            
+            .hero-container {
+                grid-template-columns: 1fr 1fr;
+                gap: 60px;
+            }
+            
+            .hero-content h1,
+            .hero-content p {
+                text-align: left;
+            }
+            
+            .hero-buttons {
+                justify-content: flex-start;
+            }
+            
+            .hero-stats {
+                justify-content: flex-start;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            
+            .hero-image {
+                order: 0;
+            }
+            
+            .experience-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .service-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .products-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .trust-icons {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .mobile-menu-toggle {
+                display: none;
+            }
+            
+            .nav-menu {
+                display: flex;
+            }
+            
+            .cta-button {
+                display: block;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                padding: 2rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 767px) {
+
+        }
+        /* Enhanced touch targets for mobile */
+        @media (max-width: 767px) {
+                        .nav-menu {
+                display: none;
+            }
+            
+            .cta-button {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            .btn-primary,
+            .btn-secondary,
+            .service-cta,
+            .form-submit,
+            .newsletter-submit {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .mobile-nav ul li a {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        /* Improved text readability on small screens */
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                line-height: 1.1;
+            }
+            
+            .section-title {
+                line-height: 1.2;
+            }
+            
+            .product-description,
+            .service-description {
+                line-height: 1.6;
+            }
+        }
+        /* Ensure no horizontal scrolling */
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        * {
+            max-width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
