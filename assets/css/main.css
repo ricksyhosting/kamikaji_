@@ -22,14 +22,14 @@
 
         /* Header - Enhanced Yellow Theme */
         .header {
-            background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2a1810 100%);
+            background: linear-gradient(135deg,rgb(47, 39, 22) 100%, #000000 0%, #1a1a1a 0.3%, #2a1810 0%);
             padding: 10px 0;
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             z-index: 1000;
-            box-shadow: 0 4px 20px rgba(251, 191, 36, 0.2);
+            box-shadow: 0 4px 20px rgba(251, 191, 36, 0.2); 
             border-bottom: 2px solid var(--primary-yellow);
         }
 
@@ -39,28 +39,40 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 15px;
+            padding: 0 1rem;
+            /* Use rem for better scalability */
             position: relative;
             min-height: 60px;
         }
 
         .logo {
             color: var(--accent-yellow);
-            font-size: clamp(18px, 4vw, 24px);
+            font-size: clamp(1.125rem, 4vw, 1.5rem);
+            /* More readable font size range */
             font-weight: bold;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
             z-index: 1001;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .logo img {
+            width: 200px;
+            /* Logo size: adjust as per design requirements */
+            height: 38px;
+            /* Maintain aspect ratio */
+            margin-top: 9px;
         }
 
         .logo i {
             color: var(--primary-yellow);
-            margin-right: 8px;
+            margin-right: 8x;
         }
 
+        /* Navigation Menu */
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 30px;
+            gap: 2rem;
+            /* More consistent gap using rem units */
         }
 
         .nav-menu a {
@@ -90,6 +102,7 @@
             width: 100%;
         }
 
+
         /* Mobile Menu */
         .mobile-menu-toggle {
             display: none;
@@ -105,7 +118,7 @@
             margin: 3px 0;
             transition: 0.3s;
             transform-origin: center;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
         }
 
         .mobile-menu-toggle.active span:nth-child(1) {
@@ -1320,5 +1333,3 @@
             font-size: clamp(11px, 2vw, 14px);
             line-height: 1.5;
         }
-
-       
