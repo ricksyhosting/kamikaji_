@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * Universal WhatsApp Link Generator
    */
   const createWhatsAppLink = (message) => {
-    const phoneNumber = "6281913000013";
+    const phoneNumber = "6281992075689";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
   };
